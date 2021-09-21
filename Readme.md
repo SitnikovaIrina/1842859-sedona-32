@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Ситникова](https://up.htmlacademy.ru/htmlcss/32/user/1842859).
-* Наставник: Дмитрий Гуляев(https://htmlacademy.ru/profile/dima).
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
