@@ -125,7 +125,7 @@ body {
 }
 
 .img-welcome {
-    background-image: url("../imges/jpeg/background-main-sedona1.jpg");
+    background-image: url("");
     background-size: 1200px 485px;
     width: 1200px;
     height: 485px;
@@ -133,7 +133,7 @@ body {
 }
 
 .newsletter {
-    background-image: url("../imges/jpeg/background-main.jpg");
+    background-image: url("");
     background-size: 1200px 411px;
     width: 1200px;
     height: 411px;
@@ -142,7 +142,7 @@ body {
 }
 
 .background-catalog {
-    background-image: url("../imges/jpeg/catalog-background.jpg");
+    background-image: url("");
     background-size: 1200px 408px;
     background-repeat: no-repeat;
     background-color: #81B3D3;
