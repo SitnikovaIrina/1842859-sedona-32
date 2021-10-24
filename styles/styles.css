@@ -604,20 +604,42 @@ body {
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-rows: 181px 181px 181px 181px;
+  width: 1056px;
   margin: 0;
-  padding: 0 71px;
+  margin-bottom: 31px;
+  padding: 0 72px;
   list-style-type: none;
+}
+
+.hotel-cart {
+  display: grid;
+  grid-template-columns: 216px 160px 160px 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  padding-top: 31px;
+  padding-bottom: 30px;
 }
 
 .hotel-cart-title {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
+  margin: 0;
 }
 
 .hotel-cart-link {
+  display: block;
   color: #000000;
   text-decoration: none;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.hotel-image-link {
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
 }
 
 .hotel-cart-meaning,
@@ -626,6 +648,17 @@ body {
   line-height: 23px;
   font-weight: 400;
   text-align: center;
+  justify-self: start;
+}
+
+.hotel-cart-meaning {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.hotel-cart-price {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
 }
 
 .hotel-details-link {
@@ -637,6 +670,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+  width: 151px;
+  height: 37px;
+  border-radius: 4px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: end;
 }
 
 .hotel-bottom-favourites {
@@ -647,6 +689,25 @@ body {
   background-color: #83B3D3;
   text-align: center;
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  border: none;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  align-self: end;
+}
+
+.hotel-stars {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  justify-self: end;
+  align-self: center;
 }
 
 .hotel-cart-rating {
@@ -657,6 +718,17 @@ body {
   background-color: #F2F2F2;
   text-align: center;
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+  justify-self: end;
+  align-self: end;
 }
 
 .pagination-show-more {
@@ -664,7 +736,7 @@ body {
   width: 625px;
   height: 55px;
   padding: 0;
-  margin-top: 61px;
+  margin-top: 0;
   margin-bottom: 61px;
   margin-right: auto;
   margin-left: auto;
