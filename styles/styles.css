@@ -84,11 +84,6 @@ body {
   padding: 6px 12px;
 }
 
-/*.navigation-link:visited {
-  color: #756257;
-  opacity: 0.3;
-}*/
-
 .navigation-link:hover {
   color: #756257;
   cursor: pointer;
@@ -98,6 +93,11 @@ body {
   color: #756257;
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.navigation-link:active {
+  color: #756257;
+  opacity: 0.3;
 }
 
 .navigation-link-current::before {
@@ -116,56 +116,45 @@ body {
   z-index: 1;
   width: 138px;
   height: 70px;
-  margin-right: 179px;
+  margin-right: 203px;
 }
 
 .page-header-menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 120px;
   margin-right: 20px;
-  margin-top: 12px;
-  margin-bottom: 12px;
 }
 
 .page-header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  display: block;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  min-width: 30px;
-  min-height: 27px;
-  padding: 10px;
+  width: 38px;
+  height: 38px;
 }
 
-.page-header-icon {
+.favourites-number {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-
-.header-icon-favourites {
-  position: absolute;
-  top: 5px;
-}
-
-.header-button-link {
-  display: block;
-  border-radius: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 19px;
   text-align: center;
-  text-decoration: none;
+  width: 19px;
+  height: 19px;
+  background-color: #7DB54F;
   color: #FFFFFF;
-  background-color: #756257;
-  align-self: center;
-  display: block;
-  padding: 8px 37px;
+  border-radius: 50%;
+  left: 22px;
+  top: 2px;
 }
 
 .page-header-link:hover{
@@ -179,17 +168,43 @@ body {
   border-radius: 10px;
 }
 
-.header-button-link:hover,
-.search-buttom:hover {
+.page-header-link:active{
+  color: #756257;
+  opacity: 0.3;
+}
+
+.header-button-link {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756257;
+  align-self: center;
+  padding: 8px 36px;
+  width: 160px;
+  height: 37px;
+}
+
+.header-button-link:hover {
   background-color: #615048;
   cursor: pointer;
 }
 
-.header-button-link:focus,
-.search-buttom:focus {
+.header-button-link:focus {
   background-color: #615048;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
+}
+
+.header-button-link:active {
+  background-color: #615048;
+}
+
+.header-button-link:active .page-header-button {
+  color: #756257;
+  opacity: 0.3;
 }
 
 .main-container {
@@ -387,8 +402,9 @@ body {
   text-align: center;
 }
 
-.search-buttom {
+.search-buttom-link {
   display: block;
+  box-sizing: border-box;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -398,6 +414,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 575px;
+  height: 60px;
   border-radius: 10px;
   padding-top: 13px;
   padding-bottom: 17px;
@@ -407,6 +424,62 @@ body {
   margin-right: auto;
 }
 
+.search-buttom-link:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.search-buttom-link:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.search-buttom:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.field {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 12px 20px;
+  width: 600px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.field:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+  color: #000000;
+}
+
+.field:invalid {
+  background-color: #FFFFFF;
+  outline: 2px solid #FF5757;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
 .newsletter-button {
   font-size: 20px;
   line-height: 26px;
@@ -414,9 +487,10 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-color: #83B3D3;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 200px;
+  height: 60px;
   border: none;
   border-radius: 0px 10px 10px 0px;
   padding: 12px 20px;
@@ -431,6 +505,15 @@ body {
   background-color: #68A2CA;
   outline: 3px solid #756257;
   border-radius: 0 10px 10px 0;
+}
+
+.newsletter-button:active {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:active .newsletter-button-text {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .page-footer-container {
@@ -461,37 +544,40 @@ body {
 }
 
 .social-network-link {
-  position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px;
-  min-width: 20px;
-  min-height: 20px;
+  width: 38px;
+  height: 38px;
 }
 
 .social-network-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  fill: #83B3D3;
 }
 
-.social-network-link:hover {
+.social-network-link:hover .social-network-icon {
   fill: #68A2CA;
   cursor: pointer;
 }
 
 .social-network-link:focus {
-  fill: #68A2CA;
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.social-network-link:focus .social-network-icon {
+  fill: #68A2CA;
+}
+
+.social-network-link:active .social-network-icon {
+  fill: #68A2CA;
+  opacity: 0.3;
 }
 
 .footer-phone {
@@ -509,17 +595,6 @@ body {
   margin-bottom: 25px;
 }
 
-.footer-logo-link {
-  display: block;
-  margin-left: auto;
-  margin-top: 22px;
-  margin-bottom: 25px;
-}
-
-.footer-logo {
-  padding: 20px;
-}
-
 .footer-phone:hover {
   color: #756257;
   cursor: pointer;
@@ -531,6 +606,22 @@ body {
   border-radius: 10px;
 }
 
+.footer-phone:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.footer-logo-link {
+  display: block;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
+.footer-logo {
+  padding: 20px;
+}
+
 .footer-logo-link:hover {
   fill: #756257;
   cursor: pointer;
@@ -540,6 +631,11 @@ body {
   fill: #756257;
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.footer-logo-link:active .footer-logo {
+  fill: #756257;
+  opacity: 0.3;
 }
 
 .img-welcome {
@@ -942,6 +1038,7 @@ body {
 }
 
 .newsletter-form {
+  display: flex;
   width: 800px;
   margin-top: 0;
   margin-bottom: 94px;
@@ -950,6 +1047,7 @@ body {
 }
 
 .newsletter-form-catalog {
+  display: flex;
   width: 800px;
   margin-top: 0;
   margin-bottom: 138px;
