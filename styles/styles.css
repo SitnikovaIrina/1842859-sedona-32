@@ -34,6 +34,7 @@ body {
 .body-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -115,7 +116,12 @@ body {
 
 .page-header-logo {
   position: absolute;
-  right: 531px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   z-index: 1;
   width: 138px;
@@ -124,7 +130,6 @@ body {
 
 .header-logo-link {
   z-index: 1;
-  outline: none;
 }
 
 .page-header-menu {
@@ -351,7 +356,7 @@ body {
   position: absolute;
   content: "";
   z-index: 1;
-  background-image: url(../imges/svg/advantages/housing.svg);
+  background-image: url("../imges/svg/advantages/housing.svg");
   background-size: 75px 72px;
   width: 75px;
   height: 72px;
@@ -364,7 +369,7 @@ body {
   position: absolute;
   content: "";
   z-index: 1;
-  background-image: url(../imges/svg/advantages/eating.svg);
+  background-image: url("../imges/svg/advantages/eating.svg");
   background-size: 74px 70px;
   width: 74px;
   height: 70px;
@@ -377,7 +382,7 @@ body {
   position: absolute;
   content: "";
   z-index: 1;
-  background-image: url(../imges/svg/advantages/souvenir.svg);
+  background-image: url("../imges/svg/advantages/souvenir.svg");
   background-size: 64px 76px;
   width: 64px;
   height: 76px;
@@ -734,7 +739,7 @@ body {
 .crumbs-item::after {
   position: absolute;
   content: "";
-  background-image: url(../imges/svg/nav-link.svg);
+  background-image: url("../imges/svg/nav-link.svg");
   width: 5px;
   height: 8px;
   left: 30px;
@@ -784,7 +789,7 @@ body {
   display: flex;
   padding-top: 0;
   padding-right: 72px;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
   padding-left: 72px;
 }
 
@@ -1078,6 +1083,10 @@ body {
 }
 
 .catalog-products-reset {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
   display: flex;
   align-items: center;
   width: 100px;
@@ -1103,13 +1112,6 @@ body {
 .catalog-products-reset:active .filter-button-reset {
   color: #FFFFFF;
   opacity: 0.3;
-}
-
-.catalog-products-reset {
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
-  text-align: center;
 }
 
 .sorting-container {
@@ -1153,7 +1155,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   appearance: none;
-  background-image: url(../imges/svg/dropdown.svg);
+  background-image: url("../imges/svg/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
   outline: none;
@@ -1242,6 +1244,7 @@ body {
 
 .sorting-display-link:hover {
   outline: 2px solid #83B3D3;
+  outline-offset: -2px;
   cursor: pointer;
 }
 
@@ -1457,19 +1460,19 @@ body {
 }
 
 .hotel-stars-amara::before {
-  background-image: url(../imges/svg/stars-4.svg);
+  background-image: url("../imges/svg/stars-4.svg");
 }
 
 .hotel-stars-desert::before {
-  background-image: url(../imges/svg/stars-3.svg);
+  background-image: url("../imges/svg/stars-3.svg");
 }
 
 .hotel-stars-villas::before {
-  background-image: url(../imges/svg/stars-2.svg);
+  background-image: url("../imges/svg/stars-2.svg");
 }
 
 .hotel-stars-greentree::before {
-  background-image: url(../imges/svg/stars-2.svg);
+  background-image: url("../imges/svg/stars-2.svg");
 }
 
 .hotel-cart-rating {
