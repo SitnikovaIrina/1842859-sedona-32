@@ -366,10 +366,15 @@ img {
   margin-bottom: 20px;
 }
 
-.advantages-text-desc {
+.advantages-text-desc,
+.advantages-text-housing {
   width: 250px;
   margin: 0 auto;
   padding-bottom: 11px;
+}
+
+.advantages-text-housing {
+  width: 180px;
 }
 
 .advantages-text-detail {
